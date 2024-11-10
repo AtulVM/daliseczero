@@ -5,10 +5,26 @@ import PostList from '../components/PostList.vue';
 import UserPostList from '../components/UserPostList.vue';
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/users', component: UserList },
-  { path: '/posts', component: PostList },
-  { path: '/user-posts', component: UserPostList },
+  {
+    path: '/',
+    name: 'Home',
+    component: Home,
+  },
+  {
+    path: '/users',
+    name: 'UserList',
+    component: UserList,
+  },
+  {
+    path: '/posts',
+    name: 'PostList',
+    component: PostList,
+  },
+  {
+    path: '/user-posts',
+    name: 'UserPostList',
+    component: UserPostList,
+  },
 ];
 
 const router = createRouter({
